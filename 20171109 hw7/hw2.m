@@ -1,4 +1,4 @@
-% æ¶ˆé™¤å‰ä¸€æ¬¡ä½œæ¥­
+% ®ø°£«e¤@¦¸§@·~
 clc; clear; close all;
 
 t = 0 : 0.0001 : 10 * pi;
