@@ -22,7 +22,7 @@ lineColor = ['r', 'g', 'b', 'c', 'k'];
 % Crate a big for-loop
 %------------------
 for index = 1 : 5
-Tn = (0.1:0.01:5)';
+Tn = (0.1:0.1:5)';
 wn = 2*pi*(1./Tn);
 max_disp = zeros(size(Tn));
 max_acc = zeros(size(Tn));
