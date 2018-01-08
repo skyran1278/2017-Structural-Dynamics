@@ -18,7 +18,7 @@ Sa = [ 0.5 0.5 0.5 ];
 
 mu = transpose(phi) * M * [1; 1; 1];
 condenseModalM = sum(modalM);
-maxDisplacement = SquareSumSqrt(phi(1, :) .* transpose(mu) ./ condenseModalM ./ omega .* Sv)
+maxDisplacement = SquareSumSqrt([phi(1, :) .* transpose(mu) ./ condenseModalM ./ omega .* Sv, phi(2, :) .* transpose(mu) ./ condenseModalM ./ omega .* Sv, phi(3, :) .* transpose(mu) ./ condenseModalM ./ omega .* Sv])
 
 maxBaseShear = SquareSumSqrt(transpose(mu .^ 2) ./ condenseModalM .* Sa)
 
